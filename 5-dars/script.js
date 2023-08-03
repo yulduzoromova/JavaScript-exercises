@@ -1,4 +1,4 @@
-// 1.
+// 1-vazifa
 // browser = ''
 // switch (browser) {
 //   case 'Edge':
@@ -17,7 +17,7 @@
 // }
 
 //=======================================
-// 2.
+// 2-vazifa
 // let a = +prompt('a?', '');
 
 // if (a == 0) {
@@ -31,7 +31,7 @@
 // }                         // chunki alert faqat bitta argument kutadi, shuning uchun qolganlari ignore bo'lib ketadi
 
 
-// 3. Output prime numbers 
+// 3-vazifa. Output prime numbers 
 // 100gacha bo'lgan faqat tub sonlar
 
 // for(let num = 2; num <= 100; num++){
@@ -47,3 +47,9 @@
 //   }
 // }
 
+// 4-vazifa. Karra jadvalini yasash.
+for (i = 1; i <= 10; i++) {
+  for (j = 1; j <= 10; j++){
+    console.log(i*j);
+  }
+}
