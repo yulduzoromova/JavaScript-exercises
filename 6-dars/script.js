@@ -88,12 +88,7 @@
 //  multipleNum(3, 3)
 
 
-// 8. Replace Function Expressions with arrow funtions in the code below:
 
-function ask(question, yes, no ) {
-  if (confirm(question)) yes() 
-  else no()
-}
 
 
 
