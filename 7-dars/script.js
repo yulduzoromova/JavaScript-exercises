@@ -131,7 +131,7 @@
 // isBoolean(obj)
 // console.log(obj);
 
-// 8. Obyekt va string berilgan. Agar obyect keylari ichida stringga teng bo'lgan key bo'lsa shu key va valueni chiqazing
+// 8. Obyekt va string berilgan. Agar obyekt keylari ichida stringga teng bo'lgan key bo'lsa shu key va valueni chiqazing
 
 // let obj = {
 //   id: 1,
@@ -141,16 +141,56 @@
 //     individual: false,
 // }
 
+// const searchString = () => {
+//   for (key in obj) {
+//     if ( typeof obj[key] !== 'string'){
+//       delete obj[key]
+//     }
+//   }
+// }
+// searchString(obj)
+// console.log(obj);
+
 // 9. obyekt va string berilgan. String bor bo'lgan obyekt valuelarini chiqaring.
 
-let obj = {
-  id: 1, 
-  name: "atirgul",
-  color: "qizil",
-  count: 10,
-  price: "10$"
-}
+// let obj = {
+//   id: 1, 
+//   name: "atirgul",
+//   color: "qizil",
+//   count: 10,
+//   price: "10$"
+// }
 
-const searchValue = () => {
-  
+// const searchValue = () => {
+//   for( value in obj){
+//     if(typeof obj[value] =='string'){
+//       console.log(obj[value]);
+//     }
+//   }
+// }
+
+// searchValue(obj)
+
+// 10. Object ichidagi agelarning yig'indisini hisoblaydigan funksiya tuzing
+
+let obj = {
+  name: 'anvar',
+  age: 23,
+  child: {
+    name: 'eshmat',
+    age: 11,
+    child: {
+    name: 'toshmat',
+    age: 7,
+  },
+},
+};
+
+let sum = 0;
+
+while (obj) {
+  sum = sum + obj.age
+
+  obj = obj.child;
 }
+console.log(sum);
