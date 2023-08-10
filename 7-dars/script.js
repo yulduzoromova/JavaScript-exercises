@@ -171,26 +171,26 @@
 
 // searchValue(obj)
 
-// 10. Object ichidagi agelarning yig'indisini hisoblaydigan funksiya tuzing
+// 10. Object ichidagi agelarning yig'indisini hisoblaydigan funksiya tuzing!!!
 
-let obj = {
-  name: 'anvar',
-  age: 23,
-  child: {
-    name: 'eshmat',
-    age: 11,
-    child: {
-    name: 'toshmat',
-    age: 7,
-  },
-},
-};
+// let obj = {
+//   name: 'anvar',
+//   age: 23,
+//   child: {
+//     name: 'eshmat',
+//     age: 11,
+//     child: {
+//     name: 'toshmat',
+//     age: 7,
+//   },
+// },
+// };
 
-let sum = 0;
+// let sum = 0;
 
-while (obj) {
-  sum = sum + obj.age
+// while (obj) {
+//   sum = sum + obj.age
 
-  obj = obj.child;
-}
-console.log(sum);
+//   obj = obj.child;
+// }
+// console.log(sum);
