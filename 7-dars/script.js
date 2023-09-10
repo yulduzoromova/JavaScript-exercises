@@ -77,7 +77,7 @@
 
 // const multiplyNumeric = (obj) => {
 // for (let key in obj){
-//   if (typeof obj[key] == 'number'){
+//   if (typeof obj[key] === 'number'){
 //       obj[key] *= 2;
 //   }
 // }
@@ -88,10 +88,16 @@
 // 5. Object keylarini toping
 
 // let obj = {
-//   id:1,
-//   name:"WeBrain"
+//   id: 1,
+//   name: "Webbrain"
 // }
-// console.log(Object.keys(obj));        //  ['id', 'name']
+
+// function isNumber() {
+//   for(val in obj){
+//     console.log(val);
+//   }
+// }
+//  isNumber(obj)
 
 // 6. Object valuelarining raqamga tenglarini toping.
 
@@ -101,14 +107,13 @@
 // }
 
 // function isNumber() {
-//   for( key in obj) {
-//     if (typeof obj[key] == 'number'){
-//       return(obj[key]);
+//   for(val in obj){
+//     if (typeof obj[val] === "number"){
+//       console.log(`${val} nomli key teng ${obj[val]} ga u number`);
 //     }
 //   }
 // }
-
-//  console.log(isNumber(obj));
+//  isNumber(obj)
 
 // 7. Obyekt valuelarining boolean tipidagi ma'lumotlarini keylari bilan qaytaring
 
@@ -161,15 +166,15 @@
 //   price: "10$"
 // }
 
-// const searchValue = () => {
-//   for( value in obj){
-//     if(typeof obj[value] =='string'){
-//       console.log(obj[value]);
-//     }
-//   }
-// }
+const searchValue = () => {
+  for( value in obj){
+    if(typeof obj[value] =='string'){
+      console.log(obj[value]);
+    }
+  }
+}
 
-// searchValue(obj)
+searchValue(obj)
 
 // 10. Object ichidagi agelarning yig'indisini hisoblaydigan funksiya tuzing!!!
 
